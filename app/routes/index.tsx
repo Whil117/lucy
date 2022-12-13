@@ -1,16 +1,110 @@
 import AtomButton from "~/components/@atoms/AtomButton";
 import AtomIcon from "~/components/@atoms/AtomIcon";
 import AtomImage from "~/components/@atoms/AtomImage";
+import AtomLoader from "~/components/@atoms/AtomLoader";
 import AtomText from "~/components/@atoms/AtomText";
 import AtomWrapper from "~/components/@atoms/AtomWrapper";
 
 export default function Index() {
   return (
     <AtomWrapper>
-      <AtomText backgroundColor="#0072FF" padding="10px">
-        alkdsnadslfk
+      <AtomText fontSize="32px" fontWeight="900">
+        Lucy
       </AtomText>
-      <AtomText color="red">alkdsnadslfk</AtomText>
+      <AtomWrapper maxWidth="1440px" padding="0px 90px">
+        <AtomWrapper>
+          <AtomText>AtomLoader Large</AtomText>
+          <AtomWrapper
+            flexDirection="row"
+            alignItems="center"
+            width="100%"
+            justifyContent="space-around"
+          >
+            <AtomLoader type="large" />
+            <AtomLoader type="large" colorLoad="#0072FF" />
+            <AtomLoader type="large" colorLoad="#e78ce7" />
+            <AtomLoader type="large" colorLoad="#41c052" />
+            <AtomLoader type="large" colorLoad="skyblue" />
+            <AtomLoader type="large" colorLoad="#da1f1f" />
+          </AtomWrapper>
+        </AtomWrapper>
+        <AtomWrapper>
+          <AtomText>AtomLoader Medium</AtomText>
+          <AtomWrapper
+            flexDirection="row"
+            alignItems="center"
+            width="100%"
+            justifyContent="space-around"
+          >
+            <AtomLoader type="medium" />
+            <AtomLoader type="medium" colorLoad="#0072FF" />
+            <AtomLoader type="medium" colorLoad="#e78ce7" />
+            <AtomLoader type="medium" colorLoad="#41c052" />
+            <AtomLoader type="medium" colorLoad="skyblue" />
+            <AtomLoader type="medium" colorLoad="#da1f1f" />
+          </AtomWrapper>
+        </AtomWrapper>
+        <AtomWrapper>
+          <AtomText>AtomLoader Small</AtomText>
+          <AtomWrapper
+            flexDirection="row"
+            alignItems="center"
+            width="100%"
+            justifyContent="space-around"
+          >
+            <AtomLoader type="small" />
+            <AtomLoader type="small" colorLoad="#0072FF" />
+            <AtomLoader type="small" colorLoad="#e78ce7" />
+            <AtomLoader type="small" colorLoad="#41c052" />
+            <AtomLoader type="small" colorLoad="skyblue" />
+            <AtomLoader type="small" colorLoad="#da1f1f" />
+          </AtomWrapper>
+        </AtomWrapper>
+        <AtomWrapper>
+          <AtomText>AtomText</AtomText>
+          <AtomWrapper
+            flexDirection="row"
+            alignItems="center"
+            width="100%"
+            justifyContent="flex-start"
+          >
+            <AtomText>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse
+              nulla neque repellendus debitis! Mollitia id quidem sunt atque
+              quod maxime minus ducimus quasi, accusamus, dicta ex nam dolor
+              perferendis!
+            </AtomText>
+            <AtomText fontWeight="bold">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse
+              nulla neque repellendus debitis! Mollitia id quidem sunt atque
+              quod maxime minus ducimus quasi, accusamus, dicta ex nam dolor
+              perferendis!
+            </AtomText>
+            <AtomText fontWeight="bold" textDecoration="underline">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse
+              nulla neque repellendus debitis! Mollitia id quidem sunt atque
+              quod maxime minus ducimus quasi, accusamus, dicta ex nam dolor
+              perferendis!
+            </AtomText>
+            <AtomText
+              fontSize="24px"
+              fontWeight="bold"
+              textDecoration="underline"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse
+              nulla neque repellendus debitis! Mollitia id quidem sunt atque
+              quod maxime minus ducimus quasi, accusamus, dicta ex nam dolor
+              perferendis!
+            </AtomText>
+            <AtomText backgroundColor="#0072FF" fontWeight="bold">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse
+              nulla neque repellendus debitis! Mollitia id quidem sunt atque
+              quod maxime minus ducimus quasi, accusamus, dicta ex nam dolor
+              perferendis!
+            </AtomText>
+          </AtomWrapper>
+        </AtomWrapper>
+      </AtomWrapper>
       <AtomIcon src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg" />
       <AtomButton>EXAMPLE</AtomButton>
       <AtomButton margin="10px" backgroundColor="#da1f1f" disabled>
