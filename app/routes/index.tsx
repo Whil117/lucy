@@ -11,7 +11,7 @@ export default function Index() {
       <AtomText fontSize="32px" fontWeight="900">
         Lucy
       </AtomText>
-      <AtomWrapper maxWidth="1440px" padding="0px 90px">
+      <AtomWrapper maxWidth="1440px" padding="0px 90px" gap="20px">
         <AtomWrapper>
           <AtomText>AtomLoader Large</AtomText>
           <AtomWrapper
@@ -104,7 +104,24 @@ export default function Index() {
             </AtomText>
           </AtomWrapper>
         </AtomWrapper>
+        <AtomWrapper>
+          <AtomText>AtomText</AtomText>
+          <AtomWrapper
+            flexDirection="row"
+            alignItems="center"
+            width="100%"
+            justifyContent="flex-start"
+          >
+            <AtomIcon src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg" />
+            <AtomIcon src="https://res.cloudinary.com/whil/image/upload/v1670118796/gallery_duuoqb.svg" />
+            <AtomIcon
+              src="https://res.cloudinary.com/whil/image/upload/v1666492647/HARMONY_orc7z0.svg"
+              color="default"
+            />
+          </AtomWrapper>
+        </AtomWrapper>
       </AtomWrapper>
+
       <AtomIcon src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg" />
       <AtomButton>EXAMPLE</AtomButton>
       <AtomButton margin="10px" backgroundColor="#da1f1f" disabled>

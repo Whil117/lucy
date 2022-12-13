@@ -10,13 +10,13 @@ export const AtomIconStyled = styled.div<AtomIconTypes>`
     width: ${({ width }) => width || `34px`};
     height: ${({ height }) => height || `34px`};
     path {
-      fill: ${({ color }) => color || `#000`}!important;
+      fill: ${({ color }) => color || `#2d3748`}!important;
     }
     polygon {
-      fill: ${({ color }) => color || `#000`}!important;
+      fill: ${({ color }) => color || `#2d3748`}!important;
     }
     circle {
-      fill: ${({ color }) => color || `#000`}!important;
+      fill: ${({ color }) => color || `#2d3748`}!important;
     }
   }
 
