@@ -105,7 +105,7 @@ export default function Index() {
           </AtomWrapper>
         </AtomWrapper>
         <AtomWrapper>
-          <AtomText>AtomText</AtomText>
+          <AtomText>AtomIcon</AtomText>
           <AtomWrapper
             flexDirection="row"
             alignItems="center"
@@ -120,31 +120,70 @@ export default function Index() {
             />
           </AtomWrapper>
         </AtomWrapper>
-      </AtomWrapper>
+        <AtomWrapper>
+          <AtomText>AtomButton</AtomText>
+          <AtomWrapper
+            flexDirection="row"
+            alignItems="center"
+            width="100%"
+            justifyContent="flex-start"
+          >
+            <AtomButton>DEFAULT</AtomButton>
+            <AtomButton margin="10px" backgroundColor="#da1f1f" disabled>
+              DISABLED
+            </AtomButton>
+            <AtomButton margin="10px" backgroundColor="#e78ce7">
+              EXAMPLE
+            </AtomButton>
+            <AtomButton margin="10px" backgroundColor="#0072FF">
+              EXAMPLE
+            </AtomButton>
+            <AtomButton margin="10px" backgroundColor="#41c052">
+              EXAMPLE
+            </AtomButton>
+            <AtomButton margin="10px" backgroundColor="#00ff95">
+              EXAMPLE
+            </AtomButton>
+          </AtomWrapper>
+        </AtomWrapper>
+        <AtomWrapper>
+          <AtomText>AtomImage</AtomText>
+          <AtomWrapper
+            flexDirection="row"
+            alignItems="center"
+            width="100%"
+            justifyContent="flex-start"
+          >
+            <AtomImage
+              src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg"
+              width="150px"
+              height="150px"
+            />
+            <AtomImage
+              src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg"
+              width="150px"
+              height="150px"
+            />
+            <AtomImage
+              src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg"
+              width="150px"
+              height="150px"
+            />
 
-      <AtomIcon src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg" />
-      <AtomButton>EXAMPLE</AtomButton>
-      <AtomButton margin="10px" backgroundColor="#da1f1f" disabled>
-        EXAMPLE
-      </AtomButton>
-      <AtomButton margin="10px" backgroundColor="#e78ce7">
-        EXAMPLE
-      </AtomButton>
-      <AtomButton margin="10px" backgroundColor="#0072FF">
-        EXAMPLE
-      </AtomButton>
-      <AtomButton margin="10px" backgroundColor="#41c052">
-        EXAMPLE
-      </AtomButton>
-      <AtomButton margin="10px" backgroundColor="#00ff95">
-        EXAMPLE
-      </AtomButton>
-      <AtomButton margin="10px">EXAMPLE</AtomButton>
-      <AtomImage
-        src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg"
-        width="150px"
-        height="150px"
-      />
+            <AtomImage
+              src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg"
+              width="150px"
+              height="150px"
+            />
+
+            <AtomImage
+              src="https://res.cloudinary.com/whil/image/upload/v1670118796/smallcaps_iowxub.svg"
+              width="150px"
+              height="150px"
+            />
+          </AtomWrapper>
+        </AtomWrapper>
+      </AtomWrapper>
     </AtomWrapper>
   );
 }
