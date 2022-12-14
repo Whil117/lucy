@@ -4,10 +4,9 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "type": "module",
   "scripts": {
     "build": "remix build",
-    "test": "rollup -c",
+    "test": "rollup -c --bundleConfigAsCjs",
     "dev": "remix dev",
     "typecheck": "tsc -b",
     "rollupBuild": "rollup -c --bundleConfigAsCjs",
