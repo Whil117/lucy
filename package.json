@@ -6,6 +6,9 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "remix build",
     "test": "rollup -c --bundleConfigAsCjs",
