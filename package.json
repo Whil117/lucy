@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "remix build",
+    "test": "rollup -c",
     "dev": "remix dev",
     "typecheck": "tsc -b",
     "rollupBuild": "rollup -c --bundleConfigAsCjs",
