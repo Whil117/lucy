@@ -1,15 +1,56 @@
-import AtomButton from "~/components/@atoms/AtomButton";
-import AtomIcon from "~/components/@atoms/AtomIcon";
-import AtomImage from "~/components/@atoms/AtomImage";
-import AtomLoader from "~/components/@atoms/AtomLoader";
-import AtomText from "~/components/@atoms/AtomText";
-import AtomWrapper from "~/components/@atoms/AtomWrapper";
+import AtomButton from "@components/@atoms/AtomButton";
+import AtomIcon from "@components/@atoms/AtomIcon";
+import AtomImage from "@components/@atoms/AtomImage";
+import AtomLoader from "@components/@atoms/AtomLoader";
+import AtomText from "@components/@atoms/AtomText";
+import AtomWrapper from "@components/@atoms/AtomWrapper";
+import { css } from "@emotion/react";
 
 export default function Index() {
   return (
     <AtomWrapper>
-      <AtomText fontSize="32px" fontWeight="900">
-        Lucy
+      <AtomText
+        fontSize="32px"
+        fontWeight="900"
+        customCSS={css`
+          order: 2;
+          color: #fde9ff;
+          font-weight: 900;
+          text-transform: uppercase;
+          font-size: clamp(3rem, 10vw, 6rem);
+          line-height: 0.75em;
+          text-align: center;
+          text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb,
+            4px 2px 1px #4af7ff, 3px 3px 1px #165bfb, 5px 3px 1px #4af7ff,
+            4px 4px 1px #165bfb, 6px 4px 1px #4af7ff, 5px 5px 1px #165bfb,
+            7px 5px 1px #4af7ff, 6px 6px 1px #165bfb, 8px 6px 1px #4af7ff,
+            7px 7px 1px #165bfb, 9px 7px 1px #4af7ff;
+
+          span {
+            display: block;
+            position: relative;
+
+            &:before {
+              content: attr(data-text);
+              position: absolute;
+              text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9,
+                -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+              z-index: 1;
+            }
+
+            &:nth-child(1) {
+              padding-right: 2.25rem;
+            }
+
+            &:nth-child(2) {
+              padding-left: 2.25rem;
+            }
+          }
+        `}
+      >
+        <AtomText as="span" fontSize="inherit">
+          Lucy
+        </AtomText>
       </AtomText>
       <AtomWrapper maxWidth="1440px" padding="0px 90px" gap="20px">
         <AtomWrapper>

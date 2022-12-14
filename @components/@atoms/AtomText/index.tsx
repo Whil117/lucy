@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import isDarkLight from "~/utils/isDarkLight";
+import isDarkLight from "@utils/isDarkLight";
 import type { AtomTextTypes } from "./types";
 
 const AtomText = styled.span<AtomTextTypes>`
