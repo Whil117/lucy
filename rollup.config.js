@@ -3,6 +3,7 @@ import inject from "@rollup/plugin-inject";
 import json from "@rollup/plugin-json";
 import resolve from "@rollup/plugin-node-resolve";
 import alias from "rollup-plugin-alias";
+import dts from "rollup-plugin-dts";
 import multiEntry from "rollup-plugin-multi-entry";
 import typescript from "rollup-plugin-typescript2";
 
@@ -22,6 +23,7 @@ export default [
       },
     ],
     plugins: [
+      dts(),
       json(),
       alias({
         applicationRoot: `${__dirname}`,
