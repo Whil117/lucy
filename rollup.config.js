@@ -1,14 +1,12 @@
 import commonjs from "@rollup/plugin-commonjs";
 import inject from "@rollup/plugin-inject";
-import json from "@rollup/plugin-json";
-import resolve from "@rollup/plugin-node-resolve";
-import alias from "rollup-plugin-alias";
-import dts from "rollup-plugin-dts";
-import multiEntry from "rollup-plugin-multi-entry";
-import typescript from "rollup-plugin-typescript2";
-
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-
+import typescript from "rollup-plugin-typescript2";
+// import nodePolyfills from 'rollup-plugin-node-polyfills';
+import json from "@rollup/plugin-json";
+import alias from "rollup-plugin-alias";
+import multiEntry from "rollup-plugin-multi-entry";
+const { nodeResolve } = require("@rollup/plugin-node-resolve");
 export default [
   {
     input: "index.ts",
@@ -23,14 +21,13 @@ export default [
       },
     ],
     plugins: [
-      dts(),
       json(),
       alias({
         applicationRoot: `${__dirname}`,
       }),
       peerDepsExternal(),
       commonjs(),
-      resolve({
+      nodeResolve({
         preferBuiltins: false,
         mainFields: ["browser", "jsnext:main", "module", "main"],
       }),
@@ -50,14 +47,13 @@ export default [
         dir: "build",
         format: "cjs",
         sourcemap: true,
-        preserveModules: true,
       },
     ],
     preserveModules: true,
     plugins: [
       json(),
       peerDepsExternal(),
-      resolve(),
+      nodeResolve(),
       commonjs(),
       typescript({
         useTsconfigDeclarationDir: true,

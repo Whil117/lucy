@@ -3,7 +3,16 @@
     "remix.env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "rollup.config.js"
+    "rollup.config.js",
+    "**/*",
+    "**/*x",
+    "**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "**/*.stories.tsx",
+    "**/*.test.tsx"
   ],
   "compilerOptions": {
     "lib": [
@@ -14,13 +23,20 @@
     "declaration": true,
     "declarationDir": "build",
     "isolatedModules": true,
+    "module": "ESNext",
     "esModuleInterop": true,
-    "jsx": "react-jsx",
+    "sourceMap": true,
+    "jsx": "preserve",
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "jsxImportSource": "@emotion/react",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "target": "ES2019",
+    "skipLibCheck": true,
     "strict": true,
     "allowJs": true,
+    "incremental": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
