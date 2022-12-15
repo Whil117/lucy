@@ -11,7 +11,7 @@
   ],
   "types": "./build\\index.d.ts",
   "scripts": {
-    "build": "remix build",
+    "build": "rollup -c",
     "test": "rollup -c --bundleConfigAsCjs",
     "dev": "remix dev",
     "typecheck": "tsc -b",
@@ -41,7 +41,7 @@
     "postcss": "^8.4.20",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rollup": "^3.7.4",
+    "rollup": "^2.58.3",
     "rollup-plugin-alias": "^2.2.0",
     "rollup-plugin-dts": "^5.0.0",
     "rollup-plugin-multi-entry": "^2.1.0",
